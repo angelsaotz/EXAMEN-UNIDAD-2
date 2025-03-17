@@ -59,51 +59,52 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { oPCIONESToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 28);
+            menuStrip1.Size = new Size(800, 33);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
             // oPCIONESToolStripMenuItem
             // 
             oPCIONESToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { uSUARIOSToolStripMenuItem, aLTAToolStripMenuItem, cERRARTABLAToolStripMenuItem, sALIRToolStripMenuItem });
+            oPCIONESToolStripMenuItem.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             oPCIONESToolStripMenuItem.Name = "oPCIONESToolStripMenuItem";
-            oPCIONESToolStripMenuItem.Size = new Size(93, 24);
+            oPCIONESToolStripMenuItem.Size = new Size(116, 29);
             oPCIONESToolStripMenuItem.Text = "OPCIONES";
             // 
             // uSUARIOSToolStripMenuItem
             // 
             uSUARIOSToolStripMenuItem.Name = "uSUARIOSToolStripMenuItem";
-            uSUARIOSToolStripMenuItem.Size = new Size(224, 26);
+            uSUARIOSToolStripMenuItem.Size = new Size(230, 30);
             uSUARIOSToolStripMenuItem.Text = "USUARIOS";
             uSUARIOSToolStripMenuItem.Click += uSUARIOSToolStripMenuItem_Click;
             // 
             // aLTAToolStripMenuItem
             // 
             aLTAToolStripMenuItem.Name = "aLTAToolStripMenuItem";
-            aLTAToolStripMenuItem.Size = new Size(224, 26);
+            aLTAToolStripMenuItem.Size = new Size(230, 30);
             aLTAToolStripMenuItem.Text = "ALTA";
             aLTAToolStripMenuItem.Click += aLTAToolStripMenuItem_Click;
             // 
             // cERRARTABLAToolStripMenuItem
             // 
             cERRARTABLAToolStripMenuItem.Name = "cERRARTABLAToolStripMenuItem";
-            cERRARTABLAToolStripMenuItem.Size = new Size(224, 26);
+            cERRARTABLAToolStripMenuItem.Size = new Size(230, 30);
             cERRARTABLAToolStripMenuItem.Text = "CERRAR TABLA";
             cERRARTABLAToolStripMenuItem.Click += cERRARTABLAToolStripMenuItem_Click;
             // 
             // sALIRToolStripMenuItem
             // 
             sALIRToolStripMenuItem.Name = "sALIRToolStripMenuItem";
-            sALIRToolStripMenuItem.Size = new Size(224, 26);
+            sALIRToolStripMenuItem.Size = new Size(230, 30);
             sALIRToolStripMenuItem.Text = "SALIR";
             sALIRToolStripMenuItem.Click += sALIRToolStripMenuItem_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.logo_tec_lag;
-            pictureBox1.Location = new Point(663, 12);
+            pictureBox1.Location = new Point(663, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(125, 62);
+            pictureBox1.Size = new Size(137, 74);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
@@ -112,6 +113,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.InactiveCaption;
             ClientSize = new Size(800, 450);
             Controls.Add(pictureBox1);
             Controls.Add(dgvOpciones);
@@ -119,7 +121,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;
             Name = "Form1";
-            Text = "Form1";
+            Text = "AGENDA";
             Activated += Form1_Activated;
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)dgvOpciones).EndInit();

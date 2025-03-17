@@ -46,65 +46,70 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(43, 73);
             label1.Name = "label1";
-            label1.Size = new Size(73, 20);
+            label1.Size = new Size(78, 20);
             label1.TabIndex = 0;
             label1.Text = "NOMBRE:";
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(43, 142);
             label2.Name = "label2";
-            label2.Size = new Size(145, 20);
+            label2.Size = new Size(156, 20);
             label2.TabIndex = 1;
             label2.Text = "APELLIDO PATERNO:";
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.Location = new Point(43, 211);
             label3.Name = "label3";
-            label3.Size = new Size(151, 20);
+            label3.Size = new Size(162, 20);
             label3.TabIndex = 2;
             label3.Text = "APELLIDO MATERNO:";
             // 
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.Location = new Point(43, 286);
             label4.Name = "label4";
-            label4.Size = new Size(69, 20);
+            label4.Size = new Size(72, 20);
             label4.TabIndex = 3;
             label4.Text = "CORREO:";
             // 
             // label5
             // 
             label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.Location = new Point(43, 364);
             label5.Name = "label5";
-            label5.Size = new Size(83, 20);
+            label5.Size = new Size(88, 20);
             label5.TabIndex = 4;
             label5.Text = "TELEFONO:";
             // 
             // tbNombre
             // 
-            tbNombre.Location = new Point(146, 70);
+            tbNombre.Location = new Point(127, 70);
             tbNombre.Name = "tbNombre";
             tbNombre.Size = new Size(125, 27);
             tbNombre.TabIndex = 5;
             // 
             // tbApat
             // 
-            tbApat.Location = new Point(200, 139);
+            tbApat.Location = new Point(205, 139);
             tbApat.Name = "tbApat";
             tbApat.Size = new Size(125, 27);
             tbApat.TabIndex = 6;
             // 
             // tbAmat
             // 
-            tbAmat.Location = new Point(200, 208);
+            tbAmat.Location = new Point(205, 208);
             tbAmat.Name = "tbAmat";
             tbAmat.Size = new Size(125, 27);
             tbAmat.TabIndex = 7;
@@ -126,12 +131,15 @@
             // 
             // butInsertar
             // 
+            butInsertar.BackColor = Color.Navy;
+            butInsertar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            butInsertar.ForeColor = Color.White;
             butInsertar.Location = new Point(612, 361);
             butInsertar.Name = "butInsertar";
             butInsertar.Size = new Size(111, 43);
             butInsertar.TabIndex = 10;
             butInsertar.Text = "INSERTAR";
-            butInsertar.UseVisualStyleBackColor = true;
+            butInsertar.UseVisualStyleBackColor = false;
             butInsertar.Click += butInsertar_Click;
             // 
             // pictureBox1
@@ -148,6 +156,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.InactiveCaption;
             ClientSize = new Size(800, 450);
             Controls.Add(pictureBox1);
             Controls.Add(butInsertar);
@@ -162,7 +171,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Alta";
-            Text = "Alta";
+            Text = "ALTA";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
